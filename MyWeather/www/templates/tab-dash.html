@@ -1,0 +1,17 @@
+<ion-view view-title="M&eacute;t&eacute;o">
+  <ion-content class="padding">
+      <div style="float: left;align-content:center">
+          <img height="45" width="45" style="border: medium none; width: 45px; height: 45px; background: url(&quot;http://openweathermap.org/img/w/{{IconId}}.png&quot;) repeat scroll 0% 0% transparent;" alt="title" src="http://openweathermap.org/images/transparent.png">
+          <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">{{Temperature}}&ordm;</div>
+          <div style="display: block; width: 85px; overflow: visible;"></div>
+          <p id="city">City: {{City}}, Country: {{Country}}</p>
+          <p id="description">Description:{{Description}}</p>
+          <p>Wind speed:{{WindSpeed}}Km/h</p>
+
+          <div id="map" style="height:250px;width:225px"></div> 
+          <p>{{Time | date:'medium'}}</p>
+      </div>
+     
+    
+  </ion-content>
+</ion-view>
